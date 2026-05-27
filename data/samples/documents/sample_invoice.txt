@@ -1,0 +1,24 @@
+INVOICE #INV-2024-001
+Date: 2024-03-15
+
+Bill To:
+Jane Doe
+123 Main St
+Springfield, IL 62701
+Email: jane.doe@example.com
+Phone: (555) 123-4567
+SSN: 123-45-6789
+
+Payment Method:
+Visa ending in 1111
+Card: 4111-1111-1111-1111
+Exp: 12/27
+Cardholder: Jane Doe
+Bank: Example Bank
+
+Provider:
+Acme Health Clinic
+NPI: 1234567890
+Phone: (555) 987-6543
+
+Services Rendered: $250.00

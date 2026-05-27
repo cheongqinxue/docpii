@@ -1,0 +1,18 @@
+---
+description: Cap scripts library at 20 files; consolidate or discard when exceeded
+alwaysApply: true
+---
+
+# Scripts library size limit
+
+Keep **at most 20 files** directly under `scripts/` (excluding this rule's concern for nested
+dirs — prefer flat scripts unless a subfolder is clearly justified).
+
+## When at or near the limit
+
+1. **Discard** one-off scripts unlikely to be reused (note removal in `AGENTS.md` changelog).
+2. **Merge** scripts with overlapping purpose into one parameterized script.
+3. **Promote** stable logic to `src/docpii/` and leave a thin script wrapper, or remove the
+   script if the CLI (`docpii`) covers the use case.
+
+Do not add a 21st script without first freeing a slot via discard or merge.

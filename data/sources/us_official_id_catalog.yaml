@@ -1,0 +1,194 @@
+# US official identity document reference samples (direct download URLs).
+# Source pages are .gov educational materials for public identification.
+# Binaries are stored under data/raw/official_samples/ (gitignored).
+
+version: 1
+
+samples:
+  # --- Oregon DMV ---
+  - id: us-or-dl-realid-stack-h
+    url: https://www.oregon.gov/odot/DMV/PublishingImages/DriverID/ThreeCardStackHoriz_RealID.png
+    document_type: drivers_license
+    jurisdiction: US-OR
+    source_page: https://www.oregon.gov/ODOT/DMV/pages/driverid/samplecards.aspx
+    description: Oregon REAL ID driver license stack (horizontal, July 2020+)
+
+  - id: us-or-dl-non-realid-stack-h
+    url: https://www.oregon.gov/odot/DMV/PublishingImages/DriverID/ThreeCardStackHoriz_NotRealID.png
+    document_type: drivers_license
+    jurisdiction: US-OR
+    source_page: https://www.oregon.gov/ODOT/DMV/pages/driverid/samplecards.aspx
+    description: Oregon non-REAL ID driver license stack (horizontal)
+
+  - id: us-or-dl-sample-2019
+    url: https://www.oregon.gov/odot/DMV/PublishingImages/driverid/sampledl19.jpg
+    document_type: drivers_license
+    jurisdiction: US-OR
+    source_page: https://www.oregon.gov/ODOT/DMV/pages/driverid/samplecards.aspx
+    description: Oregon sample driver license (2018-2020 design)
+
+  - id: us-or-dl-interim-2019
+    url: https://www.oregon.gov/odot/DMV/PublishingImages/driverid/interim19.jpg
+    document_type: drivers_license
+    jurisdiction: US-OR
+    source_page: https://www.oregon.gov/ODOT/DMV/pages/driverid/samplecards.aspx
+    description: Oregon interim driver license on security paper
+
+  - id: us-or-dl-minor-2019
+    url: https://www.oregon.gov/odot/DMV/PublishingImages/driverid/sampleminor19.jpg
+    document_type: drivers_license
+    jurisdiction: US-OR
+    source_page: https://www.oregon.gov/ODOT/DMV/pages/driverid/samplecards.aspx
+    description: Oregon minor vertical-layout driver license
+
+  # --- New York DMV ---
+  - id: us-ny-dl-realid-front
+    url: https://dmv.ny.gov/sites/default/files/images/2022-08/realid-dl-front-875x397.png
+    document_type: drivers_license
+    jurisdiction: US-NY
+    source_page: https://dmv.ny.gov/driver-license/sample-photo-documents
+    description: New York REAL ID driver license (front)
+
+  - id: us-ny-dl-realid-back
+    url: https://dmv.ny.gov/sites/default/files/images/2022-08/realid-dl-back.png
+    document_type: drivers_license
+    jurisdiction: US-NY
+    source_page: https://dmv.ny.gov/driver-license/sample-photo-documents
+    description: New York REAL ID driver license (back)
+
+  - id: us-ny-dl-standard-front
+    url: https://dmv.ny.gov/sites/default/files/images/2022-08/standard-dl-front-892x405.png
+    document_type: drivers_license
+    jurisdiction: US-NY
+    source_page: https://dmv.ny.gov/driver-license/sample-photo-documents
+    description: New York standard (non-federal) driver license (front)
+
+  - id: us-ny-dl-enhanced-front
+    url: https://dmv.ny.gov/sites/default/files/images/2022-08/enhanced-dl-front-862x392.png
+    document_type: drivers_license
+    jurisdiction: US-NY
+    source_page: https://dmv.ny.gov/driver-license/sample-photo-documents
+    description: New York Enhanced driver license (front)
+
+  - id: us-ny-dl-under21-front
+    url: https://dmv.ny.gov/sites/default/files/images/2022-08/u21_standard-dl-front_0-495x507.png
+    document_type: drivers_license
+    jurisdiction: US-NY
+    source_page: https://dmv.ny.gov/driver-license/sample-photo-documents
+    description: New York standard driver license under 21 (front)
+
+  # --- Pennsylvania DMV (Scene7 official assets) ---
+  - id: us-pa-dl-realid
+    url: https://s7d9.scene7.com/is/image/statepa/real%20id-compliant%20non-commercial%20drivers%20license-1?ts=1726663078486&dpr=off
+    document_type: drivers_license
+    jurisdiction: US-PA
+    source_page: https://www.pa.gov/agencies/dmv/driver-services/real-id/real-id-images
+    description: Pennsylvania REAL ID non-commercial driver license
+
+  - id: us-pa-dl-standard
+    url: https://s7d9.scene7.com/is/image/statepa/standard-issue%20(non-compliant)%20non-commercial%20driver_s%20license?ts=1726664566482&dpr=off
+    document_type: drivers_license
+    jurisdiction: US-PA
+    source_page: https://www.pa.gov/agencies/dmv/driver-services/real-id/real-id-images
+    description: Pennsylvania standard non-REAL ID driver license
+
+  - id: us-pa-id-realid
+    url: https://s7d9.scene7.com/is/image/statepa/real%20id-compliant%20photo%20id%20card-2?ts=1726663237650&dpr=off
+    document_type: state_id
+    jurisdiction: US-PA
+    source_page: https://www.pa.gov/agencies/dmv/driver-services/real-id/real-id-images
+    description: Pennsylvania REAL ID photo ID card
+
+  - id: us-pa-cdl-realid
+    url: https://s7d9.scene7.com/is/image/statepa/real%20id%20adult%20cdl-1?ts=1726663314488&dpr=off
+    document_type: commercial_drivers_license
+    jurisdiction: US-PA
+    source_page: https://www.pa.gov/agencies/dmv/driver-services/real-id/real-id-images
+    description: Pennsylvania REAL ID commercial driver license
+
+  # --- USCIS / DHS (I-9 acceptable documents) ---
+  - id: us-uscis-passport-book-cover
+    url: https://www.uscis.gov/sites/default/files/images/article-i9-central/USe-PptCover.PNG
+    document_type: passport
+    jurisdiction: US
+    source_page: https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents
+    description: US passport book cover (ePassport)
+
+  - id: us-uscis-passport-bio-page
+    url: https://www.uscis.gov/sites/default/files/images/article-i9-central/USe-PptBioPage.jpg
+    document_type: passport
+    jurisdiction: US
+    source_page: https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents
+    description: US passport biographic data page (sample)
+
+  - id: us-uscis-passport-card-front
+    url: https://www.uscis.gov/sites/default/files/images/article-i9-central/USCIS_US-Passport-Card-Front.jpg
+    document_type: passport_card
+    jurisdiction: US
+    source_page: https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents
+    description: US passport card (front)
+
+  - id: us-uscis-prc-front-current
+    url: https://www.uscis.gov/sites/default/files/images/article-i9-central/Image%20of%20the%20front%20of%20a%20Permanent%20Resident%20Card_Resize.jpg
+    document_type: permanent_resident_card
+    jurisdiction: US
+    source_page: https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents
+    description: Permanent Resident Card (green card) front — current design
+
+  - id: us-uscis-prc-front-previous
+    url: https://www.uscis.gov/sites/default/files/images/article-i9-central/Form%20I9%20Accept%20Docs%20-%20List%20A%20Previous%20Perm%20Res%20Card%20Front.png
+    document_type: permanent_resident_card
+    jurisdiction: US
+    source_page: https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents
+    description: Permanent Resident Card (green card) front — previous design
+
+  - id: us-uscis-ead-front-current
+    url: https://www.uscis.gov/sites/default/files/images/article-i9-central/Form%20I9%20Accept%20Docs%20-%20List%20A%20EAD%20card%20Current%20Front%202023%20-%20resize.png
+    document_type: employment_authorization
+    jurisdiction: US
+    source_page: https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents
+    description: Employment Authorization Document (I-766) front — 2023 design
+
+  - id: us-uscis-ead-back-current
+    url: https://www.uscis.gov/sites/default/files/images/article-i9-central/Form%20I9%20Accept%20Docs%20-%20List%20A%20EAD%20card%20Current%20Back%202023%20-%20resize.png
+    document_type: employment_authorization
+    jurisdiction: US
+    source_page: https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents
+    description: Employment Authorization Document (I-766) back — 2023 design
+
+  # --- US Department of State ---
+  - id: us-dos-passport-book-ngp
+    url: https://travel.state.gov/en/passports/apply/help/security-design/_jcr_content/root/container-sn-outer/container-main/container-content/container/image.coreimg.png/1774985208351/passport-book.png
+    document_type: passport
+    jurisdiction: US
+    source_page: https://travel.state.gov/content/travel/en/passports/passport-help/next-generation-passport.html
+    description: Next Generation US passport book (security design illustration)
+
+  - id: us-dos-passport-card-ngp
+    url: https://travel.state.gov/en/passports/apply/help/security-design/_jcr_content/root/container-sn-outer/container-main/container-content/container/image_2022334698.coreimg.jpeg/1774985287538/passport-card.jpeg
+    document_type: passport_card
+    jurisdiction: US
+    source_page: https://travel.state.gov/content/travel/en/passports/passport-help/next-generation-passport.html
+    description: US passport card (security design illustration)
+
+  - id: us-dos-passport-book-compare
+    url: https://travel.state.gov/en/passports/apply/help/passport-card-vs-book/_jcr_content/root/container-sn-outer/container-main/container-content/container/textimagegrid/gridList/item0/image.coreimg.png/1773952066833/compare-passport-card-and-book-passport-book.png
+    document_type: passport
+    jurisdiction: US
+    source_page: https://travel.state.gov/content/travel/en/passports/need-passport/card.html
+    description: US passport book (comparison illustration)
+
+  - id: us-dos-passport-card-compare
+    url: https://travel.state.gov/en/passports/apply/help/passport-card-vs-book/_jcr_content/root/container-sn-outer/container-main/container-content/container/textimagegrid/gridList/item1/image.coreimg.png/1773952105129/compare-passport-card-and-book-passport-card.png
+    document_type: passport_card
+    jurisdiction: US
+    source_page: https://travel.state.gov/content/travel/en/passports/need-passport/card.html
+    description: US passport card (comparison illustration)
+
+  # --- CMS Medicare ---
+  - id: us-cms-medicare-card-sample-pdf
+    url: https://www.cms.gov/medicare/new-medicare-card/health-and-drug-plans/nmc-image.pdf
+    document_type: medicare_card
+    jurisdiction: US
+    source_page: https://www.cms.gov/training-education/partner-outreach-resources/new-medicare-card/health-drug-plans
+    description: CMS official Medicare card sample image (PDF)

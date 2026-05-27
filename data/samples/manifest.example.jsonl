@@ -1,0 +1,13 @@
+# Evaluation manifest format (JSONL)
+#
+# Each line is one labeled document:
+# {
+#   "id": "sample-001",
+#   "document": "../samples/documents/invoice_001.png",
+#   "ground_truth": { ... DocumentExtraction JSON ... },
+#   "instructions": "optional override"
+# }
+#
+# Paths in "document" are resolved relative to the manifest file.
+
+{"id": "sample-001", "document": "documents/sample_invoice.txt", "ground_truth": {"document_id": "INV-2024-001", "entities": [{"entity_type": "person", "name": "Jane Doe", "role_or_context": "bill-to", "contact": {"email": "jane.doe@example.com", "phone": "(555) 123-4567", "fax": null, "website": null}, "address": {"street": "123 Main St", "city": "Springfield", "state_or_province": "IL", "postal_code": "62701", "country": "US", "full_address": null}, "government_ids": [{"id_type": "ssn", "id_number": "123-45-6789", "issuing_country": "US"}], "financial_accounts": [{"account_type": "credit_card", "account_number": "4111-1111-1111-1111", "institution_name": "Example Bank", "cardholder_name": "Jane Doe", "expiry_date": "12/27", "cvv": null}], "health_identifiers": [], "other_sensitive_fields": []}, {"entity_type": "organization", "name": "Acme Health Clinic", "role_or_context": "provider", "contact": {"email": null, "phone": "(555) 987-6543", "fax": null, "website": null}, "address": null, "government_ids": [], "financial_accounts": [], "health_identifiers": [{"id_type": "npi", "id_number": "1234567890", "provider_name": "Acme Health Clinic"}], "other_sensitive_fields": []}]}}

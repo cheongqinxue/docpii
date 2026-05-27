@@ -1,0 +1,31 @@
+vllm:
+  model: numind/NuExtract3
+  trust_remote_code: true
+  limit_mm_per_prompt:
+    image: 16
+    video: 0
+  chat_template_content_format: openai
+  generation_config: vllm
+  max_model_len: 32768
+
+inference:
+  enable_thinking: false
+  temperature: 0.2
+
+extraction:
+  instructions: |
+    Extract every person, organization, or other entity mentioned in the document.
+    For each entity, collect all associated private or sensitive information including
+    names, government IDs, contact details, addresses, credit card numbers, bank
+    account numbers, and health identifiers. Use verbatim-string fields exactly as
+    printed. Return null or empty lists when a field is not present.
+
+training:
+  model_id: numind/NuExtract3
+  output_dir: checkpoints/docpii-qlora
+  num_train_epochs: 3
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 0.0002
+  lora_r: 16
+  lora_alpha: 32

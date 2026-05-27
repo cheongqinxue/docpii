@@ -1,0 +1,29 @@
+---
+description: Python DRY, documentation, and minimal coupling for docpii
+globs: "{src/**/*.py,scripts/**/*.py,tests/**/*.py}"
+alwaysApply: false
+---
+
+# Python standards (docpii)
+
+## DRY and structure
+
+- Reuse `src/docpii/` before adding logic in scripts or tests.
+- Extract repeated patterns once; avoid copy-paste across modules.
+- Prefer extending existing functions/classes over parallel implementations.
+
+## Documentation
+
+- Google-style docstrings on all public functions and classes (`Args`, `Returns`).
+- Type hints on all parameters and return types (`X | None`, not bare `Optional` unless existing file uses it).
+
+## Coupling
+
+- Keep inter-module dependencies shallow: `schemas` → `templates` → `inference` / `evaluation` / `data`.
+- Scripts must not import from each other; both scripts and CLI import from `docpii`.
+- Avoid circular imports; use local imports only when breaking a cycle.
+
+## Quality
+
+- `ruff` (line length 100), `pytest` for behavior that matters.
+- Specific exceptions; `logging.exception()` on failures in library code.

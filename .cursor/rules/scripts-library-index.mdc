@@ -1,0 +1,25 @@
+---
+description: Scripts library must be indexed in AGENTS.md; review before adding new scripts
+alwaysApply: true
+---
+
+# Scripts library index
+
+The `scripts/` folder holds ad-hoc runnable helpers (Python, bash, etc.) for operational tasks.
+
+## Before creating a script
+
+1. Read the **Script library index** in `AGENTS.md` (root of repo).
+2. Search `scripts/` and `src/docpii/` for existing functionality.
+3. **Extend or call** an existing script/module instead of duplicating logic.
+
+## When adding or changing a script
+
+- Add a row to the index table in `AGENTS.md` (path, language, purpose, when to use).
+- Update the script count (`N / 20`) and add a line to **Index changelog**.
+- Move the item from **Planned scripts** to the main index if it was listed there.
+
+## Design
+
+- Scripts should be thin: parse args, call `docpii` package code, write outputs.
+- Durable reusable logic belongs in `src/docpii/`, not copied into scripts.

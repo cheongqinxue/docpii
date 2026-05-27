@@ -1,0 +1,22 @@
+---
+description: Use uv for Python environment and dependency management
+alwaysApply: true
+---
+
+# Tooling: uv
+
+This project uses [uv](https://docs.astral.sh/uv/) for virtualenvs, locking, and running commands.
+
+## Commands
+
+- `uv sync` — create/update `.venv` from `uv.lock` (includes dev dependency group)
+- `uv sync --extra pdf` — add optional PDF support
+- `uv sync --extra vllm` — GPU inference server for NuExtract3 (large; CUDA required)
+- `uv sync --all-extras` — all optional feature extras (pdf, train, transformers, vllm)
+- `uv lock` — refresh lockfile after `pyproject.toml` changes
+- `uv run pytest` / `uv run docpii` / `uv run ruff check src tests scripts` — run in project env
+
+Do **not** use bare `pip install` or manual `python -m venv` for project setup unless the user
+explicitly requests it.
+
+After changing dependencies, run `uv lock` then `uv sync`.
